@@ -1,0 +1,686 @@
+/* settings pages */
+#webcourier-admin,
+.webcourier-admin {
+ }
+  #webcourier-admin .row,
+  .webcourier-admin .row {
+    margin: 20px -20px; }
+  #webcourier-admin .row:after,
+  .webcourier-admin .row:after {
+    content: "";
+    clear: both;
+    display: table; }
+  #webcourier-admin .row .col,
+  .webcourier-admin .row .col {
+    padding: 0 20px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #webcourier-admin .row .col-1,
+  .webcourier-admin .row .col-1 {
+    width: 16.666%; }
+  #webcourier-admin .row .col-2,
+  .webcourier-admin .row .col-2 {
+    width: 33.333%; }
+  #webcourier-admin .row .col-3,
+  .webcourier-admin .row .col-3 {
+    width: 50%; }
+  #webcourier-admin .row .col-4,
+  .webcourier-admin .row .col-4 {
+    width: 66.666%; }
+  #webcourier-admin .row .col-5,
+  .webcourier-admin .row .col-5 {
+    width: 83.333%; }
+  #webcourier-admin .row .col-6,
+  .webcourier-admin .row .col-6 {
+    width: 100%; }
+  @media (max-width: 1200px) {
+    #webcourier-admin .row .col,
+    .webcourier-admin .row .col {
+      width: 100%;
+      float: none;
+      margin: 20px 0; } }
+  #webcourier-admin .status,
+  .webcourier-admin .status {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 3px 6px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold; }
+    #webcourier-admin .status.positive,
+    .webcourier-admin .status.positive {
+      background-color: limeGreen; }
+    #webcourier-admin .status.negative,
+    .webcourier-admin .status.negative {
+      background-color: red; }
+    #webcourier-admin .status.neutral,
+    .webcourier-admin .status.neutral {
+      background: gray; }
+  #webcourier-admin .valigntop,
+  .webcourier-admin .valigntop {
+    vertical-align: top !important; }
+  #webcourier-admin .big-margin,
+  .webcourier-admin .big-margin {
+    margin: 60px 0; }
+  #webcourier-admin .medium-margin,
+  .webcourier-admin .medium-margin {
+    margin: 40px 0; }
+  #webcourier-admin .small-margin,
+  .webcourier-admin .small-margin {
+    margin: 20px 0; }
+  #webcourier-admin .hover-activated,
+  .webcourier-admin .hover-activated {
+    opacity: 0.5; }
+  #webcourier-admin .hover-activated:hover,
+  .webcourier-admin .hover-activated:hover {
+    cursor: pointer;
+    opacity: 1; }
+  #webcourier-admin .help-text,
+  .webcourier-admin .help-text {
+    font-size: 14px; }
+    #webcourier-admin .help-text p,
+    .webcourier-admin .help-text p {
+      margin: 10px 0;
+      font-size: 14px; }
+    #webcourier-admin .help-text ul,
+    .webcourier-admin .help-text ul {
+      list-style: square;
+      margin-top: 15px;
+      padding-left: 40px; }
+  #webcourier-admin .help,
+  .webcourier-admin .help {
+    font-style: italic; }
+  #webcourier-admin .muted,
+  .webcourier-admin .muted {
+    color: #aaa; }
+  #webcourier-admin .red,
+  .webcourier-admin .red {
+    color: red; }
+  #webcourier-admin .green,
+  .webcourier-admin .green {
+    color: #32cd32; }
+  #webcourier-admin .webcourier-notice,
+  .webcourier-admin .webcourier-notice {
+    padding: 6px 12px;
+    color: #31708f;
+    background: #d9edf7;
+    border: 1px solid #bce8f1;
+    margin: 1em 0 !important; }
+  #webcourier-admin .column-ID,
+  .webcourier-admin .column-ID {
+    width: 10%; }
+  #webcourier-admin .block,
+  .webcourier-admin .block {
+    display: block; }
+  #webcourier-admin .code-sample,
+  .webcourier-admin .code-sample {
+    font-family: Consolas, Monaco, Lucida Console, monospace;
+    font-size: 12px;
+    background: white; }
+  #webcourier-admin .breadcrumbs,
+  .webcourier-admin .breadcrumbs {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em; }
+  #webcourier-admin .tab,
+  .webcourier-admin .tab {
+    display: none; }
+  #webcourier-admin .tab.tab-active,
+  .webcourier-admin .tab.tab-active {
+    display: block; }
+  #webcourier-admin .tab h2,
+  .webcourier-admin .tab h2 {
+    margin-top: 20px; }
+  #webcourier-admin .CodeMirror,
+  .webcourier-admin .CodeMirror {
+    /* Set height, width, borders, and global font properties here */
+    font-family: monospace;
+    height: 300px;
+    color: black; }
+  #webcourier-admin .CodeMirror-lines,
+  .webcourier-admin .CodeMirror-lines {
+    padding: 4px 0;
+    /* Vertical padding around content */ }
+  #webcourier-admin .CodeMirror pre,
+  .webcourier-admin .CodeMirror pre {
+    padding: 0 4px;
+    /* Horizontal padding of content */ }
+  #webcourier-admin .CodeMirror-scrollbar-filler, #webcourier-admin .CodeMirror-gutter-filler,
+  .webcourier-admin .CodeMirror-scrollbar-filler,
+  .webcourier-admin .CodeMirror-gutter-filler {
+    background-color: white;
+    /* The little square between H and V scrollbars */ }
+  #webcourier-admin .CodeMirror-gutters,
+  .webcourier-admin .CodeMirror-gutters {
+    border-right: 1px solid #ddd;
+    background-color: #f7f7f7;
+    white-space: nowrap; }
+  #webcourier-admin .CodeMirror-linenumber,
+  .webcourier-admin .CodeMirror-linenumber {
+    padding: 0 3px 0 5px;
+    min-width: 20px;
+    text-align: right;
+    color: #999;
+    white-space: nowrap; }
+  #webcourier-admin .CodeMirror-guttermarker,
+  .webcourier-admin .CodeMirror-guttermarker {
+    color: black; }
+  #webcourier-admin .CodeMirror-guttermarker-subtle,
+  .webcourier-admin .CodeMirror-guttermarker-subtle {
+    color: #999; }
+  #webcourier-admin .CodeMirror-cursor,
+  .webcourier-admin .CodeMirror-cursor {
+    border-left: 1px solid black;
+    border-right: none;
+    width: 0; }
+  #webcourier-admin .CodeMirror div.CodeMirror-secondarycursor,
+  .webcourier-admin .CodeMirror div.CodeMirror-secondarycursor {
+    border-left: 1px solid silver; }
+  #webcourier-admin .cm-fat-cursor .CodeMirror-cursor,
+  .webcourier-admin .cm-fat-cursor .CodeMirror-cursor {
+    width: auto;
+    border: 0;
+    background: #7e7; }
+  #webcourier-admin .cm-fat-cursor div.CodeMirror-cursors,
+  .webcourier-admin .cm-fat-cursor div.CodeMirror-cursors {
+    z-index: 1; }
+  #webcourier-admin .cm-animate-fat-cursor,
+  .webcourier-admin .cm-animate-fat-cursor {
+    width: auto;
+    border: 0;
+    -webkit-animation: blink 1.06s steps(1) infinite;
+    -moz-animation: blink 1.06s steps(1) infinite;
+    animation: blink 1.06s steps(1) infinite;
+    background-color: #7e7; }
+
+@-moz-keyframes blink {
+  0% { }
+  50% {
+    background-color: transparent; }
+  100% { } }
+
+@-webkit-keyframes blink {
+  0% { }
+  50% {
+    background-color: transparent; }
+  100% { } }
+
+@keyframes blink {
+  0% { }
+  50% {
+    background-color: transparent; }
+  100% { } }
+  #webcourier-admin .cm-tab,
+  .webcourier-admin .cm-tab {
+    display: inline-block;
+    text-decoration: inherit; }
+  #webcourier-admin .CodeMirror-ruler,
+  .webcourier-admin .CodeMirror-ruler {
+    border-left: 1px solid #ccc;
+    position: absolute; }
+  #webcourier-admin .cm-s-default .cm-header,
+  .webcourier-admin .cm-s-default .cm-header {
+    color: blue; }
+  #webcourier-admin .cm-s-default .cm-quote,
+  .webcourier-admin .cm-s-default .cm-quote {
+    color: #090; }
+  #webcourier-admin .cm-negative,
+  .webcourier-admin .cm-negative {
+    color: #d44; }
+  #webcourier-admin .cm-positive,
+  .webcourier-admin .cm-positive {
+    color: #292; }
+  #webcourier-admin .cm-header, #webcourier-admin .cm-strong,
+  .webcourier-admin .cm-header,
+  .webcourier-admin .cm-strong {
+    font-weight: bold; }
+  #webcourier-admin .cm-em,
+  .webcourier-admin .cm-em {
+    font-style: italic; }
+  #webcourier-admin .cm-link,
+  .webcourier-admin .cm-link {
+    text-decoration: underline; }
+  #webcourier-admin .cm-strikethrough,
+  .webcourier-admin .cm-strikethrough {
+    text-decoration: line-through; }
+  #webcourier-admin .cm-s-default .cm-keyword,
+  .webcourier-admin .cm-s-default .cm-keyword {
+    color: #708; }
+  #webcourier-admin .cm-s-default .cm-atom,
+  .webcourier-admin .cm-s-default .cm-atom {
+    color: #219; }
+  #webcourier-admin .cm-s-default .cm-number,
+  .webcourier-admin .cm-s-default .cm-number {
+    color: #164; }
+  #webcourier-admin .cm-s-default .cm-def,
+  .webcourier-admin .cm-s-default .cm-def {
+    color: #00f; }
+  #webcourier-admin .cm-s-default .cm-variable-2,
+  .webcourier-admin .cm-s-default .cm-variable-2 {
+    color: #05a; }
+  #webcourier-admin .cm-s-default .cm-variable-3,
+  .webcourier-admin .cm-s-default .cm-variable-3 {
+    color: #085; }
+  #webcourier-admin .cm-s-default .cm-comment,
+  .webcourier-admin .cm-s-default .cm-comment {
+    color: #a50; }
+  #webcourier-admin .cm-s-default .cm-string,
+  .webcourier-admin .cm-s-default .cm-string {
+    color: #a11; }
+  #webcourier-admin .cm-s-default .cm-string-2,
+  .webcourier-admin .cm-s-default .cm-string-2 {
+    color: #f50; }
+  #webcourier-admin .cm-s-default .cm-meta,
+  .webcourier-admin .cm-s-default .cm-meta {
+    color: #555; }
+  #webcourier-admin .cm-s-default .cm-qualifier,
+  .webcourier-admin .cm-s-default .cm-qualifier {
+    color: #555; }
+  #webcourier-admin .cm-s-default .cm-builtin,
+  .webcourier-admin .cm-s-default .cm-builtin {
+    color: #30a; }
+  #webcourier-admin .cm-s-default .cm-bracket,
+  .webcourier-admin .cm-s-default .cm-bracket {
+    color: #997; }
+  #webcourier-admin .cm-s-default .cm-tag,
+  .webcourier-admin .cm-s-default .cm-tag {
+    color: #170; }
+  #webcourier-admin .cm-s-default .cm-attribute,
+  .webcourier-admin .cm-s-default .cm-attribute {
+    color: #00c; }
+  #webcourier-admin .cm-s-default .cm-hr,
+  .webcourier-admin .cm-s-default .cm-hr {
+    color: #999; }
+  #webcourier-admin .cm-s-default .cm-link,
+  .webcourier-admin .cm-s-default .cm-link {
+    color: #00c; }
+  #webcourier-admin .cm-s-default .cm-error,
+  .webcourier-admin .cm-s-default .cm-error {
+    color: #f00; }
+  #webcourier-admin .cm-invalidchar,
+  .webcourier-admin .cm-invalidchar {
+    color: #f00; }
+  #webcourier-admin .CodeMirror-composing,
+  .webcourier-admin .CodeMirror-composing {
+    border-bottom: 2px solid; }
+  #webcourier-admin div.CodeMirror span.CodeMirror-matchingbracket,
+  .webcourier-admin div.CodeMirror span.CodeMirror-matchingbracket {
+    color: #0f0; }
+  #webcourier-admin div.CodeMirror span.CodeMirror-nonmatchingbracket,
+  .webcourier-admin div.CodeMirror span.CodeMirror-nonmatchingbracket {
+    color: #f22; }
+  #webcourier-admin .CodeMirror-matchingtag,
+  .webcourier-admin .CodeMirror-matchingtag {
+    background: rgba(255, 150, 0, 0.3); }
+  #webcourier-admin .CodeMirror-activeline-background,
+  .webcourier-admin .CodeMirror-activeline-background {
+    background: #e8f2ff; }
+  #webcourier-admin .CodeMirror,
+  .webcourier-admin .CodeMirror {
+    position: relative;
+    overflow: hidden;
+    background: white; }
+  #webcourier-admin .CodeMirror-scroll,
+  .webcourier-admin .CodeMirror-scroll {
+    overflow: scroll !important;
+    /* Things will break if this is overridden */
+    /* 30px is the magic margin used to hide the element's real scrollbars */
+    /* See overflow: hidden in .CodeMirror */
+    margin-bottom: -30px;
+    margin-right: -30px;
+    padding-bottom: 30px;
+    height: 100%;
+    outline: none;
+    /* Prevent dragging from highlighting the element */
+    position: relative; }
+  #webcourier-admin .CodeMirror-sizer,
+  .webcourier-admin .CodeMirror-sizer {
+    position: relative;
+    border-right: 30px solid transparent; }
+  #webcourier-admin .CodeMirror-vscrollbar, #webcourier-admin .CodeMirror-hscrollbar, #webcourier-admin .CodeMirror-scrollbar-filler, #webcourier-admin .CodeMirror-gutter-filler,
+  .webcourier-admin .CodeMirror-vscrollbar,
+  .webcourier-admin .CodeMirror-hscrollbar,
+  .webcourier-admin .CodeMirror-scrollbar-filler,
+  .webcourier-admin .CodeMirror-gutter-filler {
+    position: absolute;
+    z-index: 6;
+    display: none; }
+  #webcourier-admin .CodeMirror-vscrollbar,
+  .webcourier-admin .CodeMirror-vscrollbar {
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  #webcourier-admin .CodeMirror-hscrollbar,
+  .webcourier-admin .CodeMirror-hscrollbar {
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: scroll; }
+  #webcourier-admin .CodeMirror-scrollbar-filler,
+  .webcourier-admin .CodeMirror-scrollbar-filler {
+    right: 0;
+    bottom: 0; }
+  #webcourier-admin .CodeMirror-gutter-filler,
+  .webcourier-admin .CodeMirror-gutter-filler {
+    left: 0;
+    bottom: 0; }
+  #webcourier-admin .CodeMirror-gutters,
+  .webcourier-admin .CodeMirror-gutters {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3; }
+  #webcourier-admin .CodeMirror-gutter,
+  .webcourier-admin .CodeMirror-gutter {
+    white-space: normal;
+    height: 100%;
+    display: inline-block;
+    margin-bottom: -30px;
+    /* Hack to make IE7 behave */
+    *zoom: 1;
+    *display: inline; }
+  #webcourier-admin .CodeMirror-gutter-wrapper,
+  .webcourier-admin .CodeMirror-gutter-wrapper {
+    position: absolute;
+    z-index: 4;
+    background: none !important;
+    border: none !important; }
+  #webcourier-admin .CodeMirror-gutter-background,
+  .webcourier-admin .CodeMirror-gutter-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 4; }
+  #webcourier-admin .CodeMirror-gutter-elt,
+  .webcourier-admin .CodeMirror-gutter-elt {
+    position: absolute;
+    cursor: default;
+    z-index: 4; }
+  #webcourier-admin .CodeMirror-gutter-wrapper,
+  .webcourier-admin .CodeMirror-gutter-wrapper {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none; }
+  #webcourier-admin .CodeMirror-lines,
+  .webcourier-admin .CodeMirror-lines {
+    cursor: text;
+    min-height: 1px;
+    /* prevents collapsing before first draw */ }
+  #webcourier-admin .CodeMirror pre,
+  .webcourier-admin .CodeMirror pre {
+    /* Reset some styles that the rest of the page might have set */
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-width: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    white-space: pre;
+    word-wrap: normal;
+    line-height: inherit;
+    color: inherit;
+    z-index: 2;
+    position: relative;
+    overflow: visible;
+    -webkit-tap-highlight-color: transparent; }
+  #webcourier-admin .CodeMirror-wrap pre,
+  .webcourier-admin .CodeMirror-wrap pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: normal; }
+  #webcourier-admin .CodeMirror-linebackground,
+  .webcourier-admin .CodeMirror-linebackground {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0; }
+  #webcourier-admin .CodeMirror-linewidget,
+  .webcourier-admin .CodeMirror-linewidget {
+    position: relative;
+    z-index: 2;
+    overflow: auto; }
+  #webcourier-admin .CodeMirror-code,
+  .webcourier-admin .CodeMirror-code {
+    outline: none; }
+  #webcourier-admin .CodeMirror-scroll,
+  #webcourier-admin .CodeMirror-sizer,
+  #webcourier-admin .CodeMirror-gutter,
+  #webcourier-admin .CodeMirror-gutters,
+  #webcourier-admin .CodeMirror-linenumber,
+  .webcourier-admin .CodeMirror-scroll,
+  .webcourier-admin .CodeMirror-sizer,
+  .webcourier-admin .CodeMirror-gutter,
+  .webcourier-admin .CodeMirror-gutters,
+  .webcourier-admin .CodeMirror-linenumber {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+  #webcourier-admin .CodeMirror-measure,
+  .webcourier-admin .CodeMirror-measure {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+  #webcourier-admin .CodeMirror-cursor,
+  .webcourier-admin .CodeMirror-cursor {
+    position: absolute; }
+  #webcourier-admin .CodeMirror-measure pre,
+  .webcourier-admin .CodeMirror-measure pre {
+    position: static; }
+  #webcourier-admin div.CodeMirror-cursors,
+  .webcourier-admin div.CodeMirror-cursors {
+    visibility: hidden;
+    position: relative;
+    z-index: 3; }
+  #webcourier-admin div.CodeMirror-dragcursors,
+  .webcourier-admin div.CodeMirror-dragcursors {
+    visibility: visible; }
+  #webcourier-admin .CodeMirror-focused div.CodeMirror-cursors,
+  .webcourier-admin .CodeMirror-focused div.CodeMirror-cursors {
+    visibility: visible; }
+  #webcourier-admin .CodeMirror-selected,
+  .webcourier-admin .CodeMirror-selected {
+    background: #d9d9d9; }
+  #webcourier-admin .CodeMirror-focused .CodeMirror-selected,
+  .webcourier-admin .CodeMirror-focused .CodeMirror-selected {
+    background: #d7d4f0; }
+  #webcourier-admin .CodeMirror-crosshair,
+  .webcourier-admin .CodeMirror-crosshair {
+    cursor: crosshair; }
+  #webcourier-admin .CodeMirror-line::selection, #webcourier-admin .CodeMirror-line > span::selection, #webcourier-admin .CodeMirror-line > span > span::selection,
+  .webcourier-admin .CodeMirror-line::selection,
+  .webcourier-admin .CodeMirror-line > span::selection,
+  .webcourier-admin .CodeMirror-line > span > span::selection {
+    background: #d7d4f0; }
+  #webcourier-admin .CodeMirror-line::-moz-selection, #webcourier-admin .CodeMirror-line > span::-moz-selection, #webcourier-admin .CodeMirror-line > span > span::-moz-selection,
+  .webcourier-admin .CodeMirror-line::-moz-selection,
+  .webcourier-admin .CodeMirror-line > span::-moz-selection,
+  .webcourier-admin .CodeMirror-line > span > span::-moz-selection {
+    background: #d7d4f0; }
+  #webcourier-admin .cm-searching,
+  .webcourier-admin .cm-searching {
+    background: #ffa;
+    background: rgba(255, 255, 0, 0.4); }
+  #webcourier-admin .CodeMirror span,
+  .webcourier-admin .CodeMirror span {
+    *vertical-align: text-bottom; }
+  #webcourier-admin .cm-force-border,
+  .webcourier-admin .cm-force-border {
+    padding-right: .1px; }
+  @media print {
+    #webcourier-admin,
+    .webcourier-admin {
+      /* Hide the cursor when printing */ }
+      #webcourier-admin .CodeMirror div.CodeMirror-cursors,
+      .webcourier-admin .CodeMirror div.CodeMirror-cursors {
+        visibility: hidden; } }
+  #webcourier-admin .cm-tab-wrap-hack:after,
+  .webcourier-admin .cm-tab-wrap-hack:after {
+    content: ''; }
+  #webcourier-admin span.CodeMirror-selectedtext,
+  .webcourier-admin span.CodeMirror-selectedtext {
+    background: none; }
+  #webcourier-admin .CodeMirror,
+  .webcourier-admin .CodeMirror {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 500px; }
+  #webcourier-admin .CodeMirror-empty,
+  .webcourier-admin .CodeMirror-empty {
+    color: #999; }
+  #webcourier-admin .field-wizard,
+  .webcourier-admin .field-wizard {
+    /* table */
+    /* checkboxes in label */ }
+    #webcourier-admin .field-wizard h3,
+    .webcourier-admin .field-wizard h3 {
+      margin-top: 0;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 12px; }
+    #webcourier-admin .field-wizard code,
+    .webcourier-admin .field-wizard code {
+      margin-left: 10px; }
+    #webcourier-admin .field-wizard > div,
+    .webcourier-admin .field-wizard > div {
+      margin: 24px 0; }
+    #webcourier-admin .field-wizard label,
+    .webcourier-admin .field-wizard label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 3px; }
+    #webcourier-admin .field-wizard table,
+    .webcourier-admin .field-wizard table {
+      table-layout: fixed;
+      border-collapse: collapse;
+      border-spacing: 0; }
+    #webcourier-admin .field-wizard tr, #webcourier-admin .field-wizard td,
+    .webcourier-admin .field-wizard tr,
+    .webcourier-admin .field-wizard td {
+      vertical-align: middle; }
+    #webcourier-admin .field-wizard td.stretch,
+    .webcourier-admin .field-wizard td.stretch {
+      width: 100%; }
+    #webcourier-admin .field-wizard .cb-wrap,
+    .webcourier-admin .field-wizard .cb-wrap {
+      font-weight: normal; }
+      #webcourier-admin .field-wizard .cb-wrap input,
+      .webcourier-admin .field-wizard .cb-wrap input {
+        margin-right: 6px; }
+    #webcourier-admin .field-wizard .limit-height,
+    .webcourier-admin .field-wizard .limit-height {
+      border: 1px solid #eee;
+      padding: 6px;
+      max-height: 200px;
+      overflow-y: scroll; }
+    #webcourier-admin .field-wizard .dashicons,
+    .webcourier-admin .field-wizard .dashicons {
+      vertical-align: middle; }
+    #webcourier-admin .field-wizard .help,
+    .webcourier-admin .field-wizard .help {
+      margin-top: 0; }
+  #webcourier-admin .available-fields,
+  .webcourier-admin .available-fields {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white; }
+    #webcourier-admin .available-fields strong,
+    .webcourier-admin .available-fields strong {
+      display: block;
+      margin-bottom: 10px; }
+    #webcourier-admin .available-fields button,
+    .webcourier-admin .available-fields button {
+      margin: 0 6px 6px 0; }
+    #webcourier-admin .available-fields .is-required:after,
+    .webcourier-admin .available-fields .is-required:after {
+      content: " *";
+      color: red; }
+    #webcourier-admin .available-fields .is-required.not-in-form,
+    .webcourier-admin .available-fields .is-required.not-in-form {
+      -webkit-box-shadow: 0 0 3px 1px red;
+      -moz-box-shadow: 0 0 3px 1px red;
+      box-shadow: 0 0 3px 1px red; }
+    #webcourier-admin .available-fields .in-form,
+    .webcourier-admin .available-fields .in-form {
+      opacity: 0.5; }
+  #webcourier-admin .page-title,
+  .webcourier-admin .page-title {
+    background: url("../img/icon-large.png") no-repeat left center;
+    padding-left: 42px;
+    line-height: 32px;
+    margin-bottom: 20px; }
+    #webcourier-admin .page-title small,
+    .webcourier-admin .page-title small {
+      font-size: 12px;
+      color: #777;
+      display: inline-block;
+      margin-left: 10px; }
+  #webcourier-admin .page-title-action .dashicons,
+  #webcourier-admin .button .dashicons,
+  #webcourier-admin .button-secondary .dashicons,
+  .webcourier-admin .page-title-action .dashicons,
+  .webcourier-admin .button .dashicons,
+  .webcourier-admin .button-secondary .dashicons {
+    vertical-align: middle;
+    line-height: 16px;
+    margin: 0 4px 0 0; }
+  #webcourier-admin .form-table td p,
+  .webcourier-admin .form-table td p {
+    margin-top: 1em; }
+  #webcourier-admin .sidebar,
+  .webcourier-admin .sidebar {
+    border-left: 1px solid #ccc; }
+  #webcourier-admin .sidebar h3,
+  #webcourier-admin .sidebar h4,
+  .webcourier-admin .sidebar h3,
+  .webcourier-admin .sidebar h4 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  #webcourier-admin .sidebar > div,
+  .webcourier-admin .sidebar > div {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px; }
+    #webcourier-admin .sidebar > div:last-of-type,
+    .webcourier-admin .sidebar > div:last-of-type {
+      border-bottom: 0; }
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  padding: 20px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 100%;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .overlay .close {
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.5; }
+  .overlay .close:hover {
+    opacity: 1; }
+
+.overlay-background {
+  z-index: 99998;
+  background: rgba(0, 0, 0, 0.67);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; }
